@@ -19,7 +19,7 @@ Antes de começar, você vai precisar ter instalado em sua máquina as seguintes
 Git, VSCode (Recomendavel) e Node.js.
 
 <h2>Clone este repositório</h2>
-<p align="center"> $ git clone <https://github.com/CakonChan/project-desafio-formulario> </p>
+$ git clone <https://github.com/CakonChan/project-desafio-formulario>
 
 # Acesse a pasta do projeto no terminal/cmd
 $ cd nlw1
