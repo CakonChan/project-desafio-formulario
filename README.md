@@ -19,21 +19,22 @@ Antes de começar, você vai precisar ter instalado em sua máquina as seguintes
 Git, VSCode (Recomendavel) e Node.js.
 
 <h2>Clone este repositório</h2>
-$ git clone <https://github.com/CakonChan/project-desafio-formulario>
+$ git clone https://github.com/CakonChan/project-desafio-formulario
 
-# Acesse a pasta do projeto no terminal/cmd
+<h2>Acesse a pasta do projeto no terminal/cmd</h2>
 $ cd nlw1
 
-# Vá para a pasta server
+<h2>Vá para a pasta server</h2>
 $ cd server
 
-# Instale as dependências
+<h2>Instale as dependências</h2>
 $ npm install
 
-# Execute a aplicação em modo de desenvolvimento
+<h2>Execute a aplicação em modo de desenvolvimento</h2>
+<li> </li>
 $ npm run dev:server
 
-# O servidor inciará na porta:3333 - acesse <http://localhost:3333>
+<h4>O servidor inciará na porta:3333 - acesse <http://localhost:3333></h4>
 
 
 <p align="center"> ### Lista dos features </p>
