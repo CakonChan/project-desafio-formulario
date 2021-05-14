@@ -13,13 +13,13 @@
 - [VSCode (Recomendavel)](https://code.visualstudio.com/)
 - [Node.js](https://nodejs.org/pt-br/)
 
-<p align="center" style="color: red"> ### Pré-Requisito </p>
+<p align="center"> ### Pré-Requisito </p>
 
 Antes de começar, você vai precisar ter instalado em sua máquina as seguintes tecnologias:
 Git, VSCode (Recomendavel) e Node.js.
 
-Clone este repositório
-<p align="center"> $ git clone <https://github.com/CakonChan/project-desafio-formulario/> </p>
+<h2>Clone este repositório</h2>
+<p align="center"> $ git clone <https://github.com/CakonChan/project-desafio-formulario> </p>
 
 # Acesse a pasta do projeto no terminal/cmd
 $ cd nlw1
