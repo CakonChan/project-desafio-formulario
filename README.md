@@ -20,19 +20,19 @@
 Antes de começar, você vai precisar ter instalado em sua máquina as seguintes tecnologias:<br />
 Git, VSCode (Recomendavel) e Node.js.
 
-<h2>Clone este repositório</h2>
+<h3>Clone este repositório</h3>
 <li>$ git clone https://github.com/CakonChan/project-desafio-formulario</li>
 
-<h2>Acesse a pasta do projeto no terminal/cmd</h2>
+<h3>Acesse a pasta do projeto no terminal/cmd</h3>
 <li>$ cd nlw1</li>
 
-<h2>Vá para a pasta server</h2>
+<h3>Vá para a pasta server</h3>
 <li>$ cd server</li>
 
-<h2>Instale as dependências</h2>
+<h3>Instale as dependências</h3>
 <li>$ npm install</li>
 
-<h2>Execute a aplicação em modo de desenvolvimento</h2>
+<h3>Execute a aplicação em modo de desenvolvimento</h3>
 <li>$ npm run dev:server</li>
 
 <h4>O servidor inciará na porta:3333 - acesse http://localhost:3333</h4>
@@ -48,12 +48,13 @@ Git, VSCode (Recomendavel) e Node.js.
 :black_square_button: HTML da pagina do formulario <br />
 :black_square_button: Cadastro Pessoal <br />
 
-### Autor
+<hr><br />
+<p align="center"> ### Autor </p>
 ---
 
- <img style="border-radius: 50%;" src="https://avatars.githubusercontent.com/u/51713097?v=4" width="100px;" alt="foto perfil"/>
- <br />
- <h2>Caio "Cakon" Ferraz</h2>
+ 
+ <h2><img style="border-radius: 50%;" src="https://avatars.githubusercontent.com/u/51713097?v=4" width="100px;" alt="foto perfil"/>
+ <br />   Caio "Cakon" Ferraz</h2>
 
 Entre em contato:
 
