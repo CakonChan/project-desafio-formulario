@@ -40,8 +40,19 @@ Git, VSCode (Recomendavel) e Node.js.
 <p align="center"> ### Lista dos features </p>
 
 
-- [x] New Repository GitHub
-- [x] Criar Projeto no my PC
-- [x] Desenvolver e explorar README.md
-- [ ] HTML da pagina do formulario
-- [ ] Cadastro Pessoal
+:white_check_mark: New Repository GitHub
+:white_check_mark: Criar Projeto no my PC
+:white_check_mark: Desenvolver e explorar README.md
+:black_square_button: HTML da pagina do formulario
+:black_square_button: Cadastro Pessoal
+
+### Autor
+---
+
+ <img style="border-radius: 50%;" src="https://avatars.githubusercontent.com/u/51713097?v=4" width="100px;" alt="foto perfil"/>
+ <br />
+ <h2>Caio "Cakon" Ferraz</h2>
+
+Entre em contato:
+
+[![Linkedin Badge](https://img.shields.io/badge/-Cakon-blue?style=flat-square&logo=Linkedin&logoColor=white&link=https://www.linkedin.com/in/caioporto-192/)](https://www.linkedin.com/in/caioporto-192/)
