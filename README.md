@@ -13,30 +13,26 @@
 
 - [Git](https://git-scm.com)
 - [VSCode](https://code.visualstudio.com/)
-- [Node.js](https://nodejs.org/pt-br/)
+
+ :vs: Extensão para VSCode: ritwickdey.liveserver  :vs:
 
 <hr><br />
 <p align="center"> ### Pré-Requisito </p>
 
 Antes de começar, você vai precisar ter instalado em sua máquina as seguintes tecnologias:<br />
-Git, VSCode (Recomendavel) e Node.js.
+Git e VSCode com Live Server (Recomendavel)
 
 <h3>Clone este repositório</h3>
 <li>$ git clone https://github.com/CakonChan/project-desafio-formulario</li>
 
-<h3>Acesse a pasta do projeto no terminal/cmd</h3>
-<li>$ cd nlw1</li>
+<h3>Na Pasta e Abrir index.html</h3>
 
-<h3>Vá para a pasta server</h3>
-<li>$ cd server</li>
+<h2>OU</h2>
 
-<h3>Instale as dependências</h3>
-<li>$ npm install</li>
-
-<h3>Execute a aplicação em modo de desenvolvimento</h3>
-<li>$ npm run dev:server</li>
-
-<h4>O servidor inciará na porta:3333 - acesse http://localhost:3333</h4>
+<h3>Instale Extensão Live Server</h3>
+<li>Extensions (Ctrl+Shift+X) e Pesquisa: ritwickdey.liveserver ou Live Server</li>
+<li>Botão direito no index.html e clique opção: "Open with Live Server"</li>
+<li>Seu Padrão Navegador Apresenta O index.html</li>
 
 <hr><br />
 
