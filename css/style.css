@@ -4,6 +4,15 @@
         box-sizing: border-box;
     }
     
+    html {
+        font-family: Verdana, Geneva, Tahoma, sans-serif;
+        height: 100%;
+    }
+    
+    body {
+        background-color: #fff;
+    }
+    
     nav {
         display: flex;
         justify-content: space-around;
@@ -20,7 +29,6 @@
         margin-right: 5%;
         align-items: center;
         width: 75%;
-        font-family: Verdana, Geneva, Tahoma, sans-serif;
         color: rgb(255, 255, 255);
         text-transform: uppercase;
         letter-spacing: 5px;
@@ -65,6 +73,119 @@
         margin: 3px;
         border-radius: 3px;
         transition: all .3s ease-in-out;
+    }
+    
+    main {
+        width: 100%;
+        position: absolute;
+        margin-top: 4px;
+        background-color: white;
+    }
+    
+    .main-content {
+        border-left: 2px solid #fd7e14;
+        border-right: 2px solid #fd7e14;
+        text-align: center;
+        display: flex;
+        flex-direction: column;
+        background-color: white;
+        color: black;
+        padding-bottom: 70px;
+    }
+    
+    .main-content form {
+        padding-top: 2%;
+        margin-top: 32px;
+        margin-left: 10%;
+        margin-right: 10%;
+        height: 75%;
+        background: rgba(255, 255, 255, 0.03);
+    }
+    
+    .main-content .text-animation {
+        margin-top: 3%;
+        font-size: 50px;
+        animation: anima 7s infinite normal;
+    }
+    
+    .main-content div.input {
+        margin-bottom: 24px;
+        position: relative;
+    }
+    
+     :-moz-placeholder {
+        /* Firefox 18- */
+        text-align: center;
+    }
+    
+     ::-moz-placeholder {
+        /* Firefox 19+ */
+        text-align: center;
+    }
+    
+     :-ms-input-placeholder {
+        text-align: center;
+    }
+    
+    .main-content input,
+    button,
+    select {
+        -moz-appearance: none;
+        -webkit-appearance: none;
+        appearance: none;
+        width: 100%;
+        padding: 13px 0;
+        border: none;
+        border-bottom: 1px solid #fd7e14;
+        background-color: transparent;
+        outline: none;
+        color: black;
+        font-size: 1em;
+        padding-left: 5%;
+    }
+    
+    .main-content button {
+        margin-top: 16px;
+        background-color: #fd7e14;
+        color: white;
+    }
+    
+    .main-content input~label,
+    select~label {
+        position: absolute;
+        top: 16px;
+        left: 0;
+        padding-left: 2%;
+        color: rgba(0, 0, 0, 0.6);
+        transition: .4s;
+    }
+    
+    .main-content input:focus~label,
+    input:valid~label,
+    select:focus~label,
+    select:valid~label {
+        transform: translateY(-24px);
+        font-size: 0.8em;
+        letter-spacing: 0.1em;
+    }
+    
+    @keyframes anima {
+        from {
+            color: #fd7e14;
+        }
+        to {
+            color: #d46b14;
+        }
+    }
+    
+    footer {
+        position: fixed;
+        left: 0;
+        bottom: 0;
+        width: 100%;
+        color: black;
+        text-align: center;
+        background-color: #fd7e14;
     }
     /* 
     RESPONSIVIDADE
