@@ -1,0 +1,138 @@
+    * {
+        margin: 0px;
+        padding: 0px;
+        box-sizing: border-box;
+    }
+    
+    nav {
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+        min-height: 8vh;
+        background-color: #fd7e14;
+        box-shadow: 0px 5px #d46b14;
+    }
+    
+    .nav-tema {
+        display: flex;
+        float: left;
+        margin-left: 5%;
+        margin-right: 5%;
+        align-items: center;
+        width: 75%;
+        font-family: Verdana, Geneva, Tahoma, sans-serif;
+        color: rgb(255, 255, 255);
+        text-transform: uppercase;
+        letter-spacing: 5px;
+        font-size: 24px;
+    }
+    
+    .ul-menu {
+        display: flex;
+        float: right;
+        padding: 0;
+        margin: 0;
+        margin-right: 5%;
+        justify-content: space-around;
+        width: 25%;
+        list-style: none;
+    }
+    
+    .ul-menu a {
+        font-family: Verdana, Geneva, Tahoma, sans-serif;
+        color: rgb(255, 255, 255);
+        text-decoration: none;
+        letter-spacing: 3px;
+        font-size: 14px;
+    }
+    /* Quando clicar no botao e funciona. pois é visivel*/
+    
+    #nav-label-menu {
+        position: absolute;
+        top: -100px;
+    }
+    
+    nav .nav-label-submenu {
+        display: none;
+        position: absolute;
+        right: 5%;
+    }
+    
+    nav .nav-label-submenu .linha {
+        width: 30px;
+        height: 5px;
+        background-color: #fff;
+        margin: 3px;
+        border-radius: 3px;
+        transition: all .3s ease-in-out;
+    }
+    /* 
+    RESPONSIVIDADE
+    */
+    /* Resolução Maxima 1320 */
+    
+    @media screen and (max-width: 1320px) {
+        nav .ul-menu {
+            float: none;
+            position: fixed;
+            z-index: 9;
+            right: 0;
+            top: 8%;
+            bottom: 100%;
+            width: 50%;
+            height: auto;
+            flex-direction: column;
+            align-items: center;
+            background-color: #fd7e14;
+            box-shadow: 0px 5px 10px #d46b14;
+            overflow: hidden;
+            box-sizing: border-box;
+            transition: all .5s ease-in-out;
+        }
+        /*CSS para tag a no menu da nav */
+        nav .ul-menu a {
+            font-size: 30px;
+            justify-content: center;
+        }
+        /*Exibe Sub-Menus */
+        nav :checked~.ul-menu {
+            bottom: 50%;
+        }
+        /*Botão Exibido */
+        nav .nav-label-submenu {
+            display: block;
+        }
+        /*Animação: Terceira Linha Em Diagonal para baixo */
+        nav :checked~.nav-label-submenu .linha:nth-child(1) {
+            transform: translateY(10px) rotate(225deg);
+        }
+        /*Animação: Terceira Linha Em Diagonal para cima */
+        nav :checked~.nav-label-submenu .linha:nth-child(3) {
+            transform: translateY(-10px) rotate(-225deg);
+        }
+        /*Transforma Segunda Linha Branca em transparante */
+        nav :checked~.nav-label-submenu .linha:nth-child(2) {
+            opacity: 0;
+        }
+    }
+    /* Resolução Minimo 1321 */
+    
+    @media screen and (min-width: 1321px) {
+        nav .nav-tema {
+            font-size: 30px;
+        }
+        nav .ul-menu li {
+            margin-right: 30px;
+        }
+        nav .ul-menu a {
+            font-size: 30px;
+            justify-content: space-around;
+        }
+    }
+    /* Resolução Maxima 768 */
+    
+    @media screen and (max-width: 768px) {
+        nav .ul-menu {
+            width: 200px;
+        }
+    }
