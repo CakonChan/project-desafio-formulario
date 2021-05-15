@@ -1,11 +1,12 @@
-# projeto-bankline-atracao-front
- Projeto de BankLine do Desafio do Cadastro
+<h1 align="center"> Desafio - Cadastro Pessoal - Atração - Finalista </h1>
 
-<h1 align="center"> Desafio Cadastro Pessoal - Atração - Candidato </h1>
+<br /> <h3 align="center">projeto-desafio-formulario</h3>
+
+<br /> <p align="center">Projeto de BankLine do Desafio do Cadastro</p>
 
 <p align="center"> Meu Projeto do Desafio é desenvolver uma pagina do formulario utilizando HTML, CSS, JavaScript</p>
 
-<h4 align="center"> 🚧  Projeto - Desafio - Atração 🚀 Em construção...  🚧 </h4>
+<h4 align="center"> :small_orange_diamond:  Projeto - Desafio - Atração 🚀 Em construção...  :small_orange_diamond: </h4>
 
 <hr><br />
 <p align="center"> ### Tecnologia </p>
@@ -50,7 +51,6 @@ Git, VSCode (Recomendavel) e Node.js.
 
 <hr><br />
 <p align="center"> ### Autor </p>
----
 
  
  <h2><img style="border-radius: 50%;" src="https://avatars.githubusercontent.com/u/51713097?v=4" width="100px;" alt="foto perfil"/>
