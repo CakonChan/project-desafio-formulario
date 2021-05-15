@@ -7,12 +7,14 @@
 
 <h4 align="center"> 🚧  Projeto - Desafio - Atração 🚀 Em construção...  🚧 </h4>
 
+<hr><br />
 <p align="center"> ### Tecnologia </p>
 
 - [Git](https://git-scm.com)
 - [VSCode](https://code.visualstudio.com/)
 - [Node.js](https://nodejs.org/pt-br/)
 
+<hr><br />
 <p align="center"> ### Pré-Requisito </p>
 
 Antes de começar, você vai precisar ter instalado em sua máquina as seguintes tecnologias:<br />
@@ -33,9 +35,9 @@ Git, VSCode (Recomendavel) e Node.js.
 <h2>Execute a aplicação em modo de desenvolvimento</h2>
 <li>$ npm run dev:server</li>
 
-<hr>
 <h4>O servidor inciará na porta:3333 - acesse http://localhost:3333</h4>
 
+<hr><br />
 
 <p align="center"> ### Lista dos features </p>
 
