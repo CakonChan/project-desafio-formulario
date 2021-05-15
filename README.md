@@ -4,7 +4,7 @@
 
 <br /> <p align="center">Projeto de BankLine do Desafio do Cadastro</p>
 
-<p align="center"> Meu Projeto do Desafio é desenvolver uma pagina do formulario utilizando HTML, CSS, JavaScript</p>
+<p align="center"> Meu Projeto do Desafio é Desenvolver Uma Pagina do Formulario Utilizando HTML, CSS, JavaScript</p>
 
 <h4 align="center"> :small_orange_diamond:  Projeto - Desafio - Atração 🚀 Em construção...  :small_orange_diamond: </h4>
 
