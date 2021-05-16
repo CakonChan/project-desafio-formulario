@@ -6,6 +6,12 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="css/style.css">
+
+    <script src="https://code.jquery.com/jquery-3.4.1.min.js" integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script>
+    <script src="js/cep.js"></script>
+    <script src="js/mascara.js"></script>
+    <script src="js/formulario.js" defer></script>
+    <!-- DEFER indica a um navegador que o script deve ser executado após do documento ter sido analisado -->
     <title>.: cadastro pessoal :.</title>
 </head>
 
@@ -38,27 +44,29 @@
     <main>
         <div class="main-content">
             <p class="text-animation">Nova Conta</p>
-            <form action="js/formulario.js">
+            <form action="." method="get">
                 <div class="input">
-                    <input required type="text" />
+                    <input required type="text" placeholder="Nome" />
                     <label>Nome</label>
                     <span class="error"></span>
+                    <span class="success"></span>
                 </div>
 
                 <div class="input">
-                    <input required type="text" />
+                    <input required type="text" name="cpf" onkeydown="javascript: fMasc(this, mCPF);" placeholder="Ex: 000.111.222-33" />
                     <label>CPF</label>
                     <span class="error"></span>
                 </div>
 
                 <div class="input">
-                    <input required type="text" />
+                    <input type="text" name="rg" onkeydown="javascript: fMasc(this, mRG);" placeholder="Ex: 00.111.222-33" />
                     <label>RG</label>
                     <span class="error"></span>
                 </div>
 
-                <div class="input">
+                <div class="select">
                     <select id="sexo" name="sexo">
+                        <option>Qual é Seu Sexo?</option>
                     <option value="M">Masculino</option>
                     <option value="F">Feminino</option>
                 </select>
@@ -67,60 +75,67 @@
                 </div>
 
                 <div class="input">
-                    <input required type="text" placeholder="Ex: Avenida numero" />
-                    <label>Endereço</label>
-                    <span class="error"></span>
-                </div>
-
-                <div class="input">
-                    <input required type="text" />
-                    <label>Número</label>
-                    <span class="error"></span>
-                </div>
-
-                <div class="input">
-                    <input required type="text" />
-                    <label>Bairro</label>
-                    <span class="error"></span>
-                </div>
-
-                <div class="input">
-                    <input required type="text" />
-                    <label>Cidade</label>
-                    <span class="error"></span>
-                </div>
-
-                <div class="input">
-                    <input required type="text" />
-                    <label>Estado</label>
-                    <span class="error"></span>
-                </div>
-
-                <div class="input">
-                    <input required type="text" />
+                    <input required name="cep" id="cep" type="text" onkeydown="javascript: fMasc(this, mCEP);" placeholder="Ex: 99000-000" />
                     <label>CEP</label>
                     <span class="error"></span>
                 </div>
 
                 <div class="input">
-                    <input required type="text" />
+                    <input required name="endereco" id="endereco" type="text" placeholder="Ex: R. Domingos José Martins" />
+                    <label>Endereço</label>
+                    <span class="error"></span>
+                </div>
+
+                <div class="input">
+                    <input type="text" placeholder="Caso Condominio ou Apartamento, Preenche!" />
+                    <label>Complemento</label>
+                    <span class="error"></span>
+                </div>
+
+                <div class="input">
+                    <input required type="text" onkeydown="javascript: fMasc(this, mNum);" placeholder="Caso não tem, Deixe Branco!" />
+                    <label>Número</label>
+                    <span class="error"></span>
+                </div>
+
+                <div class="input">
+                    <input name="bairro" id="bairro" type="text" placeholder="Ex: Parque Dez de Novembro" />
+                    <label>Bairro</label>
+                    <span class="error"></span>
+                </div>
+
+                <div class="input">
+                    <input name="uf" id="uf" type="text" placeholder="Ex: Amazónia" />
+                    <label>Estado</label>
+                    <span class="error"></span>
+                </div>
+
+                <div class="input">
+                    <input name="cidade" id="cidade" type="text" placeholder="Ex: Manaus" />
+                    <label>Cidade</label>
+                    <span class="error"></span>
+                </div>
+
+                <div class="input">
+                    <input type="number" name="telefoneFixo" onkeydown="javascript: fMasc(this, mTelFixo);" placeholder="Ex: (99) 9999-9999" />
                     <label>Telefone Fixo</label>
                     <span class="error"></span>
                 </div>
 
                 <div class="input">
-                    <input required type="text" />
+                    <input required type="tel" name="telefoneCelular" onkeydown="javaScript: fMasc(this, mTelCell);" placeholder="Ex: (99) 9 9999-9999" />
                     <label>Telefone Celular</label>
                     <span class="error"></span>
+                    <span class="success"></span>
+
                 </div>
 
                 <button type="submit">Criar Conta</button>
             </form>
         </div>
-        <script src="js/formulario.js"></script>
     </main>
 
-    <footer>
+    <footer class="footer">
         <h2>copyright</h2>
     </footer>
 </body>
