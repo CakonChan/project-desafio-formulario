@@ -46,6 +46,15 @@ Git e VSCode com Live Server (Recomendavel)
 :black_square_button: Cadastro Pessoal <br />
 
 <hr><br />
+<p align="center"> ### Pesquisa, Links e Implementações Relevantes </p>
+
+<h5>CSS e Validação Formulário Revelencia Pelo YouTube</h5>
+<li>https://www.youtube.com/watch?v=GTMEuHxh8aQ&t=2320s</li>
+<h5>JQuery - Via CEP</h5>
+<li>https://viacep.com.br/exemplo/jquery/</li>
+
+
+<hr><br />
 <p align="center"> ### Autor </p>
 
  
