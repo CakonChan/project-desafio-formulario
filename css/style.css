@@ -91,6 +91,8 @@
         background-color: white;
         color: black;
         padding-bottom: 70px;
+        padding-left: 10%;
+        padding-right: 10%;
     }
     
     .main-content form {
@@ -104,13 +106,26 @@
     
     .main-content .text-animation {
         margin-top: 3%;
-        font-size: 50px;
+        font-size: 80px;
         animation: anima 7s infinite normal;
     }
     
-    .main-content div.input {
+    .main-content div.input,
+    div.select {
         margin-bottom: 24px;
         position: relative;
+    }
+    
+    .main-content input::-webkit-outer-spin-button,
+    input::-webkit-inner-spin-button {
+        /* ocultar setas em outras navegadores*/
+        -webkit-appearance: none;
+        margin: 0;
+    }
+    
+    .main-content input[type=number] {
+        /* Firefox Remover Seta do input Number */
+        -moz-appearance: textfield;
     }
     
      :-moz-placeholder {
@@ -145,9 +160,11 @@
     }
     
     .main-content button {
-        margin-top: 16px;
+        margin-top: 24px;
         background-color: #fd7e14;
         color: white;
+        font-size: 3em;
+        border-radius: 15px;
     }
     
     .main-content input~label,
@@ -167,6 +184,28 @@
         transform: translateY(-24px);
         font-size: 0.8em;
         letter-spacing: 0.1em;
+    }
+    
+    .main-content .input span.error {
+        display: flex;
+        padding: 0;
+        background-color: rgba(255, 0, 0, 0.2);
+    }
+    
+    .main-content .input span.error.active {
+        border: 2px solid red;
+        padding: 0.4em;
+    }
+    
+    .main-content .input span.success {
+        display: flex;
+        padding: 0;
+        background-color: transparent;
+    }
+    
+    .main-content .input span.success.active {
+        border: 2px solid green;
+        padding: 0.4em;
     }
     
     @keyframes anima {
