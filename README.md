@@ -52,6 +52,8 @@ Git e VSCode com Live Server (Recomendavel)
 <li>https://www.youtube.com/watch?v=GTMEuHxh8aQ&t=2320s</li>
 <h5>JQuery - Via CEP</h5>
 <li>https://viacep.com.br/exemplo/jquery/</li>
+<h5>Implementação Revelencia</h5>
+<li>https://pt.stackoverflow.com/questions/199264/como-faco-uma-mascara-para-um-input/199276</li>
 
 
 <hr><br />
