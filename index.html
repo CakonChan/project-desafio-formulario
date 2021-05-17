@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/style.css">
+
+    <script src="js/cep.js"></script>
+    <script src="js/mascara.js"></script>
+    <script src="js/formulario.js" defer></script>
+    <!-- DEFER indica a um navegador que o script deve ser executado após do documento ter sido analisado -->
+    <title>.: cadastro pessoal :.</title>
+</head>
+
+<body>
+    <header>
+        <nav>
+            <input type="checkbox" id="nav-label-menu">
+            <div class="nav-tema">
+                Cadastro Pessoal
+            </div>
+            <ul class="ul-menu">
+                <li>
+                    <a href="#">Inicio</a>
+                </li>
+                <li>
+                    <a href="index.html" alt="cadastro pessoal">Cadastro</a>
+                </li>
+                <li>
+                    <a href="#">Exemplo</a>
+                </li>
+            </ul>
+            <label for="nav-label-menu" class="nav-label-submenu">
+                <div class="linha"></div>
+                <div class="linha"></div>
+                <div class="linha"></div>
+            </label>
+        </nav>
+    </header>
+
+    <main>
+        <div class="main-content">
+            <p class="text-animation">Nova Conta</p>
+            <form method="get" action=".">
+                <div class="input">
+                    <input required type="text" placeholder="Nome" />
+                    <label>Nome</label>
+                    <span class="error"></span>
+                    <span class="success"></span>
+                </div>
+
+                <div class="input">
+                    <input required type="text" name="cpf" onkeydown="javascript: fMasc(this, mCPF);" placeholder="Ex: 000.111.222-33" maxlength="14" />
+                    <label>CPF</label>
+                    <span class="error"></span>
+                    <span class="success"></span>
+                </div>
+
+                <div class="input">
+                    <input type="text" name="rg" onkeydown="javascript: fMasc(this, mRG);" placeholder="Ex: 00.111.222-33" maxlength="13" />
+                    <label>RG</label>
+                </div>
+
+                <div class="select">
+                    <select id="sexo" name="sexo" placeholder="">
+                        <option value="">Qual é Seu Sexo?</option>
+                    <option value="M">Masculino</option>
+                    <option value="F">Feminino</option>
+                    <option value="hT">Homem transgênero</option>
+                    <option value="mT">Mulher Transgênero</option>
+                    <option value="hTs">Homem Transexual</option>
+                    <option value="mTs">Mulher Transexual</option>
+                    <option value="C">Cisgênero</option>
+                    <option value="noKnow">Não sei responder</option>
+                    <option value="noAns">Prefiro não responder</option>                
+                </select>
+                    <label>Sexo</label>
+                </div>
+
+                <div class="input">
+                    <input name="cep" id="cep" type="text" onblur="pesquisacep(this.value);" onkeydown="javascript: fMasc(this, mCEP);" placeholder="Ex: 99000-000" maxlength="10" />
+                    <label>CEP</label>
+                </div>
+
+                <div class="input">
+                    <input required name="endereco" id="endereco" type="text" placeholder="Ex: R. Domingos José Martins" />
+                    <label>Endereço</label>
+                    <span class="error"></span>
+                    <span class="success"></span>
+                </div>
+
+                <div class="input">
+                    <input type="text" placeholder="Caso Condominio ou Apartamento, Preenche!" maxlength="300" />
+                    <label>Complemento</label>
+                </div>
+
+                <div class="input">
+                    <input required type="text" placeholder="Caso não tem, Digite 0" maxlength="12" />
+                    <label>Número</label>
+                    <span class="error"></span>
+                    <span class="success"></span>
+                </div>
+
+                <div class="input">
+                    <input name="bairro" id="bairro" type="text" placeholder="Ex: Parque Dez de Novembro" />
+                    <label>Bairro</label>
+                </div>
+
+                <div class="input">
+                    <input name="estado" id="estado" type="text" placeholder="Ex: AM (Amazonia)" maxlength="2" />
+                    <label>Estado (UF)</label>
+                </div>
+
+                <div class="input">
+                    <input name="cidade" id="cidade" type="text" placeholder="Ex: Manaus" />
+                    <label>Cidade</label>
+                </div>
+
+                <div class="input">
+                    <input type="tel" name="telefoneFixo" onkeydown="javascript: fMasc(this, mTel);" placeholder="Ex: (99) 9999-9999" maxlength="14" />
+                    <label>Telefone Fixo</label>
+                </div>
+
+                <div class="input">
+                    <input required type="tel" name="telefoneCelular" onkeydown="javaScript: fMasc(this, mTel);" placeholder="Ex: (99) 9 9999-9999" maxlength="15" />
+                    <label>Telefone Celular</label>
+                    <span class="error"></span>
+                    <span class="success"></span>
+                </div>
+
+                <button type="submit">Criar Conta</button>
+            </form>
+        </div>
+    </main>
+
+    <footer>
+        <h2>copyright</h2>
+    </footer>
+</body>
+
+</html>
