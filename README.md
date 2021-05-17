@@ -42,19 +42,24 @@ Git e VSCode com Live Server (Recomendavel)
 :white_check_mark: New Repository GitHub <br />
 :white_check_mark: Criar Projeto no my PC <br />
 :white_check_mark: Desenvolver e explorar README.md <br />
-:black_square_button: HTML da pagina do formulario <br />
-:black_square_button: Cadastro Pessoal <br />
+:white_check_mark: HTML da pagina do formulario <br />
+:white_check_mark: Cadastro Pessoal <br />
 
 <hr><br />
 <p align="center"> ### Pesquisa, Links e Implementações Relevantes </p>
 
 <h5>CSS e Validação Formulário Revelencia Pelo YouTube</h5>
 <li>https://www.youtube.com/watch?v=GTMEuHxh8aQ&t=2320s</li>
-<h5>JQuery - Via CEP</h5>
-<li>https://viacep.com.br/exemplo/jquery/</li>
-<h5>Implementação Revelencia</h5>
+<h5>Implementação Revelencia - Mascara do Campo</h5>
 <li>https://pt.stackoverflow.com/questions/199264/como-faco-uma-mascara-para-um-input/199276</li>
-
+<h5>Implementação Revelencia - CSS ::placeholder</h5>
+<li>https://www.w3schools.com/cssref/sel_placeholder.asp</li>
+<h5>Implementação Revelencia - PreventDefault HTML DOM</h5>
+<li>https://www.w3schools.com/jsref/event_preventdefault.asp</li>
+<h5>Implementação Revelencia - For/IN JavaScript</h5>
+<li>https://www.w3schools.com/jsref/jsref_forin.asp</li>
+<h5>Implementação Revelencia - Validação JavaScript</h5>
+<li>https://www.w3schools.com/js/js_validation_api.asp</li>
 
 <hr><br />
 <p align="center"> ### Autor </p>
