@@ -1,21 +1,33 @@
 const campos = document.querySelectorAll('[required]')
 
+
+document.querySelector("form").addEventListener('submit', evento => {
+    // NO Console informa que está enviado
+    alert('Enviado Formulário.\nParabéns!')
+
+    //nao vai enviar formulário
+    event.preventDefault() //Cancela o evento se for cancelável
+})
+
 function validacaoCampo(campo) {
     //logica para verificar se existem erros
     function verifyErrors() {
+        //variavel recebe falso como se fosse 0 pois não é inteiro
         let foundError = false;
 
+        //for in - observar as propriedades de campo na questao de validacao
+        //validity contém propriedades relacionadas à validação de um CAMPO
         for (let error in campo.validity) {
 
-            // Verifica se existem erros
-            if (campo.validity[error] && !campo.validity.valid) {
+            // Verifica se existem erros e retorno true para exibir resultado no console
+            if (campo.validity[error]) {
                 foundError = error;
             }
         }
         return foundError;
     }
 
-
+    //Exibe alerta quando campo obrigatorio em branco
     function customMessage(typeError) {
         const messages = {
             text: {
@@ -28,6 +40,7 @@ function validacaoCampo(campo) {
         return messages[campo.type][typeError];
     }
 
+    //Do index.html na tag span do error e success comunicação
     function setCustomMessage(message) {
         const spanError = campo.parentNode.querySelector('span.error')
         const spanSuccess = campo.parentNode.querySelector('span.success')
@@ -51,10 +64,8 @@ function validacaoCampo(campo) {
         if (error) {
             const message = customMessage(error)
 
-            campo.style.borderColor = 'red'
             setCustomMessage(message)
         } else {
-            campo.style.borderColor = 'green'
             setCustomMessage()
         }
     }
@@ -79,11 +90,3 @@ for (campo of campos) {
     })
     campo.addEventListener('blur', customValidation)
 }
-
-
-document.querySelector("form").addEventListener('submit', evento => {
-    console.log('enviar o formulario')
-
-    //nao vai enviar formulário
-    event.preventDefault()
-})
