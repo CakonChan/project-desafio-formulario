@@ -175,15 +175,7 @@
         padding-left: 2%;
         color: rgba(0, 0, 0, 0.6);
         transition: .4s;
-    }
-    
-    .main-content input:focus~label,
-    input:valid~label,
-    select:focus~label,
-    select:valid~label {
         transform: translateY(-24px);
-        font-size: 0.8em;
-        letter-spacing: 0.1em;
     }
     
     .main-content .input span.error {
@@ -204,7 +196,7 @@
     }
     
     .main-content .input span.success.active {
-        border: 2px solid green;
+        border: 2px solid orange;
         padding: 0.4em;
     }
     
@@ -229,6 +221,20 @@
     /* 
     RESPONSIVIDADE
     */
+    /* Resolução Minimo 1321 */
+    
+    @media screen and (min-width: 1321px) {
+        nav .nav-tema {
+            font-size: 30px;
+        }
+        nav .ul-menu li {
+            margin-right: 30px;
+        }
+        nav .ul-menu a {
+            font-size: 30px;
+            justify-content: space-around;
+        }
+    }
     /* Resolução Maxima 1320 */
     
     @media screen and (max-width: 1320px) {
@@ -275,24 +281,17 @@
             opacity: 0;
         }
     }
-    /* Resolução Minimo 1321 */
-    
-    @media screen and (min-width: 1321px) {
-        nav .nav-tema {
-            font-size: 30px;
-        }
-        nav .ul-menu li {
-            margin-right: 30px;
-        }
-        nav .ul-menu a {
-            font-size: 30px;
-            justify-content: space-around;
-        }
-    }
     /* Resolução Maxima 768 */
     
     @media screen and (max-width: 768px) {
         nav .ul-menu {
             width: 200px;
+        }
+    }
+    
+    @media screen and (max-width: 576px) {
+        .main-content ::-moz-placeholder {
+            color: #fff;
+            opacity: 1;
         }
     }
