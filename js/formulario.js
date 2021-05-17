@@ -70,23 +70,3 @@ function validacaoCampo(campo) {
         }
     }
 }
-
-//Ocorre validacao quando clicar
-function customValidation(event) {
-    const campo = event.target
-    const validation = validacaoCampo(campo)
-
-    validation()
-}
-
-for (campo of campos) {
-
-    //Ocorre INVALIDO quando falta campo preenchido
-    campo.addEventListener('invalid', evento => {
-
-        event.preventDefault()
-
-        customValidation(event)
-    })
-    campo.addEventListener('blur', customValidation)
-}
