@@ -4,6 +4,15 @@
         box-sizing: border-box;
     }
     
+    html {
+        font-family: Verdana, Geneva, Tahoma, sans-serif;
+        height: 100%;
+    }
+    
+    body {
+        background-color: #fff;
+    }
+    
     nav {
         display: flex;
         justify-content: space-around;
@@ -20,7 +29,6 @@
         margin-right: 5%;
         align-items: center;
         width: 75%;
-        font-family: Verdana, Geneva, Tahoma, sans-serif;
         color: rgb(255, 255, 255);
         text-transform: uppercase;
         letter-spacing: 5px;
@@ -66,9 +74,167 @@
         border-radius: 3px;
         transition: all .3s ease-in-out;
     }
+    
+    main {
+        width: 100%;
+        position: absolute;
+        margin-top: 4px;
+        background-color: white;
+    }
+    
+    .main-content {
+        border-left: 2px solid #fd7e14;
+        border-right: 2px solid #fd7e14;
+        text-align: center;
+        display: flex;
+        flex-direction: column;
+        background-color: white;
+        color: black;
+        padding-bottom: 70px;
+        padding-left: 10%;
+        padding-right: 10%;
+    }
+    
+    .main-content form {
+        padding-top: 2%;
+        margin-top: 32px;
+        margin-left: 10%;
+        margin-right: 10%;
+        height: 75%;
+        background: rgba(255, 255, 255, 0.03);
+    }
+    
+    .main-content .text-animation {
+        margin-top: 3%;
+        font-size: 80px;
+        animation: anima 7s infinite normal;
+    }
+    
+    .main-content div.input,
+    div.select {
+        margin-bottom: 24px;
+        position: relative;
+    }
+    
+    .main-content input::-webkit-outer-spin-button,
+    input::-webkit-inner-spin-button {
+        /* ocultar setas em outras navegadores*/
+        -webkit-appearance: none;
+        margin: 0;
+    }
+    
+    .main-content input[type=number] {
+        /* Firefox Remover Seta do input Number */
+        -moz-appearance: textfield;
+    }
+    
+     :-moz-placeholder {
+        /* Firefox 18- */
+        text-align: center;
+    }
+    
+     ::-moz-placeholder {
+        /* Firefox 19+ */
+        text-align: center;
+    }
+    
+     :-ms-input-placeholder {
+        text-align: center;
+    }
+    
+    .main-content input,
+    button,
+    select {
+        -moz-appearance: none;
+        -webkit-appearance: none;
+        appearance: none;
+        width: 100%;
+        padding: 13px 0;
+        border: none;
+        border-bottom: 1px solid #fd7e14;
+        background-color: transparent;
+        outline: none;
+        color: black;
+        font-size: 1em;
+        padding-left: 5%;
+    }
+    
+    .main-content button {
+        margin-top: 24px;
+        background-color: #fd7e14;
+        color: white;
+        font-size: 3em;
+        border-radius: 15px;
+    }
+    
+    .main-content input~label,
+    select~label {
+        position: absolute;
+        top: 16px;
+        left: 0;
+        padding-left: 2%;
+        color: rgba(0, 0, 0, 0.6);
+        transition: .4s;
+        transform: translateY(-24px);
+    }
+    
+    .main-content .input span.error {
+        display: flex;
+        padding: 0;
+        background-color: rgba(255, 0, 0, 0.2);
+    }
+    
+    .main-content .input span.error.active {
+        border: 2px solid red;
+        padding: 0.4em;
+    }
+    
+    .main-content .input span.success {
+        display: flex;
+        padding: 0;
+        background-color: transparent;
+    }
+    
+    .main-content .input span.success.active {
+        border: 2px solid orange;
+        padding: 0.4em;
+    }
+    
+    @keyframes anima {
+        from {
+            color: #fd7e14;
+        }
+        to {
+            color: #d46b14;
+        }
+    }
+    
+    footer {
+        position: fixed;
+        left: 0;
+        bottom: 0;
+        width: 100%;
+        color: black;
+        text-align: center;
+        background-color: #fd7e14;
+    }
     /* 
     RESPONSIVIDADE
     */
+    /* Resolução Minimo 1321 */
+    
+    @media screen and (min-width: 1321px) {
+        nav .nav-tema {
+            font-size: 30px;
+        }
+        nav .ul-menu li {
+            margin-right: 30px;
+        }
+        nav .ul-menu a {
+            font-size: 30px;
+            justify-content: space-around;
+        }
+    }
     /* Resolução Maxima 1320 */
     
     @media screen and (max-width: 1320px) {
@@ -115,24 +281,17 @@
             opacity: 0;
         }
     }
-    /* Resolução Minimo 1321 */
-    
-    @media screen and (min-width: 1321px) {
-        nav .nav-tema {
-            font-size: 30px;
-        }
-        nav .ul-menu li {
-            margin-right: 30px;
-        }
-        nav .ul-menu a {
-            font-size: 30px;
-            justify-content: space-around;
-        }
-    }
     /* Resolução Maxima 768 */
     
     @media screen and (max-width: 768px) {
         nav .ul-menu {
             width: 200px;
+        }
+    }
+    
+    @media screen and (max-width: 576px) {
+        .main-content ::-moz-placeholder {
+            color: #fff;
+            opacity: 1;
         }
     }
